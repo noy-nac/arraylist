@@ -1,16 +1,16 @@
 
 public class APrrayList<T> implements IList<T> {
 
-	private T[] container;
+	private Object[] container;
 	private int size;
 
 	public APrrayList() {
-		conatiner = new T[10];
+		container = new Object[10];
 		size = 0;
 	}
 
 	public APrrayList(int size) {
-		container = new T[size];
+		container = new Object[size];
 		size = 0;
 	}
 
@@ -29,7 +29,7 @@ public class APrrayList<T> implements IList<T> {
 			throw new IllegalArgumentException("precondition violated: valid index in list");
 		}
 		// TODO finish this method
-		return container[index];
+		return (T)container[index];
 	}
 
 

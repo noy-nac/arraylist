@@ -40,7 +40,7 @@ public interface IList<T> {
 	 * return element
 	 * pre: element is nonnull, index is a valid index in list
 	 */
-	public T insert(T elemnt, int index);
+	public T insert(T element, int index);
 
 	/**
 	 * returns true if element is in the list, false otherwise
