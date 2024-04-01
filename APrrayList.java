@@ -9,8 +9,8 @@ public class APrrayList<T> implements IList<T> {
 		size = 0;
 	}
 
-	public APrrayList(int size) {
-		container = new Object[size];
+	public APrrayList(int capacity) {
+		container = new Object[capacity];
 		size = 0;
 	}
 
@@ -24,6 +24,7 @@ public class APrrayList<T> implements IList<T> {
 	// Note the preconditions in IList<T>
 	// If the parameters passed to any method violate the preconditions, throw a new IllegalArgumentException
 
+	@SuppressWarnings("unchecked")
 	public T get(int index) {
 		if(index < 0 || index >= size) {
 			throw new IllegalArgumentException("precondition violated: valid index in list");
