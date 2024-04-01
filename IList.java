@@ -26,7 +26,7 @@ public interface IList<T> {
 	 * return element or null if element is not present in the list
 	 * pre: element is nonnull
 	 */
-	public T remove(T element);
+	public T removeElement(T element);
 
 	/**
 	 * remove the value at index in the list
